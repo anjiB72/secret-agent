@@ -6,6 +6,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Secret Agent Supply Inc.</title>
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
@@ -13,77 +14,89 @@
 
   <body>
   <!--Main heading with Logo and company name-->
-    <div class="">
-      <img src="./resources/images/logo.png" alt="Secret Agent Supplies Logo">
-      <div class="">
-        <span>SECRET AGENT SUPPLY INC.</span>
+    <div class="heading">
+      <div class="flex-row-head content-margin">
+        <img id="logo" src="./resources/images/logo.png" alt="Secret Agent Supplies Logo">
+        <div id="head-text">
+          <span>SECRET AGENT SUPPLY INC.</span>
+        </div>
       </div>
     </div>
     <!--Container with background image and New arrival text-->
-    <div class="">
-      <div class="">
-        New Arrival
-      </div>
-      <div class="">
-        SPORT BIKES AND MOTORCYCLES
+    <div class="bikes">
+      <div class="content-margin" id="new-arrival">
+        <p id="arrival">New Arrival</p>
+        <p id="cycles">SPORT BIKES AND MOTORCYCLES</p>
       </div>
     </div>
     <!--MENU BAR-->
-    <div class="">
-      <span>Eyewear</span>
-      <span>Apparel</span>
-      <span>Gadgets</span>
-      <span>Vehicles</span>
-      <span>Classes</span>
-      <span>Contact</span>
+  <nav>
+    <div class="menu flex-row">
+        <span class="full-menu">Eyewear</span>
+        <span class="full-menu">Apparel</span>
+        <span class="full-menu">Gadgets</span>
+        <span class="full-menu">Vehicles</span>
+        <span class="full-menu">Classes</span>
+        <span class="full-menu">Contact</span>
+        <span id="short-menu">Menu</span>
     </div>
+  </nav>
+
     <!--main flex container-->
-    <div class="">
+    <div class="main-content flex-col">
       <!--Items container-->
-      <div class="">
-        <div class="">
-          <img src="./resources/images/pen.png" alt="Exploding pen picture">
-          <div class="">
-            Exploding Pen
+      <div class="flex-row" id="items">
+        <div class="item-box flex-col">
+          <div class="item-pic">
+            <img id="pen" src="./resources/images/pen.png" alt="Exploding pen picture">
+          </div>
+          <div class="item-text">
+            <p>Exploding Pen</P>
           </div>
         </div>
-        <div class="">
-          <img src="./resources/images/watch.png" alt="Cellular Watch picture">
-          <div class="">
-            Cellular Watch
+        <div class="item-box flex-col">
+          <div class="item-pic">
+            <img id="watch" src="./resources/images/watch.png" alt="Cellular Watch picture">
+          </div>
+          <div class="item-text">
+            <p>Cellular Watch</P>
           </div>
         </div>
-        <div class="">
-          <img src="./resources/images/glasses.png" alt="Thermal Glasses picture">
-          <div class="">
-            Thermal Glasses
+        <div class="item-box flex-col">
+          <div class="item-pic">
+            <img id="glasses" src="./resources/images/glasses.png" alt="Thermal Glasses picture">
           </div>
-        </div>
-        <!--location and hours-->
-        <div class="">
-          <div class="">
-          <div class="">
-            Location
+          <div class="item-text">
+            <p>Thermal Glasses</p>
           </div>
-          <div class="">
-            -47.346436, 84.32354
-          </div>
-        </div>
-        <div class="">
-          <div class="">
-            Hours
-          </div>
-          <div class="">
-            0800 - 1800
-          </div>
-        </div>
         </div>
       </div>
+
+        <!--location and hours-->
+        <div class="flex-row-last content-margin" id="loc-hrs">
+          <div class="box-items">
+            <div class="box-top">
+              <p id="loc">Location</p>
+            </div>
+            <div class="box-bottom" id="co-ords">
+              <p>-47.346436, 84.32354</p>
+            </div>
+          </div>
+          <div class="box-items">
+            <div class="box-top">
+              <p id="hrs">Hours</p>
+            </div>
+            <div class="box-bottom">
+              <p>0800 - 1800</p>
+            </div>
+          </div>
+        </div>
+
     </div>
     <!--Footer container and content-->
-    <footer>
-      <div class="">
-        copyright Secret Agent Supply Inc.
+    <footer class="flex-row" id="footer">
+      <div class="flex-row">
+        <span id="footer-text">Copyright Secret Agent Supply Inc.</span>
       </div>
     </footer>
   </body>

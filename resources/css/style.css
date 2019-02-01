@@ -1,0 +1,314 @@
+/*Secret Agent project stylesheet
+  Author: Angela Boakes
+  Date: February 2019 */
+
+/*SET BASE FONT SIZE*/
+html {
+    font-size: 18px;
+  }
+
+/*set font family & margins for body*/
+  body {
+  font-family: helvetica, sans-serif;
+  Margin: 0;
+  background-color: black;
+  }
+
+/*flex container styling*/
+.flex-row-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+.flex-row-last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.content-margin{
+  margin-left: 15%;
+  }
+
+
+/*heading styling*/
+.heading {
+  background-color: black;
+  width: 100%;
+  height: 2.32rem;
+  }
+    #logo {
+      height: 1.5rem;
+      margin: auto 1rem auto 0.5rem;
+      align-self: flex-start;
+      }
+    #head-text {
+      color: white;
+      font-size: 1rem;
+      margin: 0.66rem 0;
+      }
+
+  /*New arrival container and text*/
+  .bikes{
+    background-image: url(../images/moto.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    height: 25rem;
+    padding-top: 9rem;
+    }
+    #new-arrival{
+      background-color: black;
+      width: 20rem;
+      padding: 2rem 3rem;
+      }
+        #arrival {
+          font-size: 1rem;
+          color: white;
+          font-weight: bold;
+          align-self: flex-start;
+                }
+        #cycles {
+          font-size: 2rem;
+          color: white;
+          font-weight: bold;
+          align-self: flex-start;
+          margin-top: 0.25rem;
+            }
+
+/*styling for menu bar*/
+nav {
+  width: 100%;
+  background-color: firebrick;
+}
+  .menu {
+    padding: 0.75rem 0;
+    }
+    .full-menu {
+      margin: 0;
+      color: white;
+      justify-content: space-between;
+      }
+
+/*styling for main content*/
+
+.main-content{
+  background-color: white;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  }
+
+  .item-box{
+    width: 30%;
+    min-height: 13rem;
+    justify-content: center;
+    border: 4px solid black;
+    }
+    .item-pic {
+      margin: 2rem;
+      height: 9rem;
+      }
+      #items{
+        padding: 3rem 0;
+        }
+
+      #pen,
+      #watch,
+      #glasses {
+        width: 9rem;
+        }
+
+      #glasses{
+        padding-top: 2rem;
+        }
+
+      .item-text {
+        background-color: black;
+        width: 100%;
+      }
+        .item-text>p{
+          color: white;
+          text-align: center;
+          margin: 0.5rem 0;
+        }
+
+/*location and hours content*/
+#loc-hrs{
+  padding-bottom: 4rem;
+  }
+
+.box-items{
+  width: 35%;
+  }
+
+.box-top{
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+#loc,
+#hrs {
+  color: white;
+}
+.box-bottom {
+  padding-top: 0.1rem;
+}
+
+/*Footer and content styling*/
+footer {
+  margin: 0;
+  width: 100%;
+  height: 5rem;
+  }
+  #footer-text{
+    color: white;
+    justify-content: flex-start;
+    }
+
+/*MEDIA QUERIES FOR RESPONSIVE DESIGN*/
+
+/*GREATER THAN 960px*/
+@media only screen and (min-width: 960px) {
+  .flex-row,
+  .flex-row-last {
+    width: 960px;
+    margin: 0 auto;
+    }
+
+    #short-menu{
+    display: none;
+    }
+}
+
+/*LESS THAN 960px*/
+@media only screen and (max-width: 959px) {
+  .flex-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    #footer{
+      justify-content: flex-start;
+    }
+
+  .flex-row-last{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      }
+
+  .content-margin{
+    margin-left: 0;
+  }
+
+  .full-menu {
+    display: none;
+  }
+  .menu{
+    justify-content: center;
+  }
+  #short-menu {
+    color: white;
+    align-self: center;
+  }
+  .item-box{
+    width: 47%;
+    align-self: center;
+    margin: 0 0.25rem 0.25rem 0.25rem;
+  }
+}
+
+
+/*BETWEEN 200px and 480px*/
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+  .flex-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+  .flex-row-last{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      }
+
+  .content-margin{
+    margin-left: 0;
+    }
+    #logo {
+        height: 1rem;
+        margin: auto 1rem auto 0.5rem;
+        align-self: flex-start;
+        }
+      #head-text {
+        color: white;
+        font-size: 0.75rem;
+        margin: 0.66rem 0;
+        }
+
+  .bikes{
+    margin: 0;
+    height: 15rem;
+      }
+
+    #new-arrival{
+      max-width: 100%;
+      padding: 1rem 0 1rem 0.5rem;
+      margin-top: 10rem;
+
+      }
+        #arrival {
+          font-size: 0.77rem;
+          }
+        #cycles {
+          font-size: 1rem;
+          text-overflow: hidden;
+          }
+
+    #short-menu {
+      color: white;
+      align-self: center;
+      }
+
+      #pen,
+      #watch,
+      #glasses {
+        width: 7rem;
+        }
+
+      #glasses{
+        padding-top: 2rem;
+        }
+
+    .box-items{
+      width: 90%;
+      align-self: center;
+      margin: 0.25rem;
+      }
+      #co-ords {
+        margin-bottom: 0.5rem;
+        }
+
+    #footer {
+      justify-content: center;
+      max-width: 100%;
+    }
+}
